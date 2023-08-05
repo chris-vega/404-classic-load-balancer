@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>404 classic load balancer</title>
+  <script>
+    function redirectToRandomPage() {
+      var pages = [
+        'https://main.d1mk3w6ixk9t33.amplifyapp.com/404-classic.html',
+        'https://twop0intfive-dot-xyz.s3.us-east-2.amazonaws.com/404-classic.html',
+        'https://404classic.z13.web.core.windows.net/'
+      ];
+      
+      var randomIndex = Math.floor(Math.random() * pages.length);
+      var randomPage = pages[randomIndex];
+      
+      window.location.href = randomPage;
+    }
+
+    // Call the function when the page loads
+    window.onload = redirectToRandomPage;
+  </script>
+</head>
+<body>
+  <h1>balancing load...</h1>
+</body>
+</html>
