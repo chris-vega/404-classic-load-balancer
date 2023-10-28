@@ -4,10 +4,18 @@
   <title>404 classic load balancer</title>
   <script>
     function redirectToRandomPage() {
-      var pages = [
+      var pages = [  
+        // AWS Amplify  
         'https://main.d1mk3w6ixk9t33.amplifyapp.com/404-classic.html',
+        // AWS S3
         'https://twop0intfive-dot-xyz.s3.us-east-2.amazonaws.com/404-classic.html',
+        
+        // Azure
         'https://404classic.z13.web.core.windows.net/'
+        
+        // Cloudflare Pages
+        'https://404-classic.pages.dev/404-classic'
+        'https://97d786ac.404-classic.pages.dev/404-classic.html.txt'
       ];
       
       var randomIndex = Math.floor(Math.random() * pages.length);
